@@ -53,3 +53,10 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.ds-inline {
+  display: inline-block !important;
+    width: 95%;
+    font-size: 1.3em !important;
+    font-weight: 500 !important;
+}
