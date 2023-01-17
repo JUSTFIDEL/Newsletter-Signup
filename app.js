@@ -69,13 +69,8 @@ app.post('/failure', (req, res) => {
 
 
 
-app.listen(3000, (req, res) => {
+app.listen(process.env.POST || 3000, (req, res) => {
     console.log('Server starting at Port 3000');
 })
 
 
-// API Key
-// 9584ac1b77ce3ea61d72bb21f91024e1-us17
-
-// Unique ID
-// f96cbb5cb6
