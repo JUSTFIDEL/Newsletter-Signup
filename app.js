@@ -42,8 +42,10 @@ app.post('/', (req, res) => {
 	const request = https.request(url, options, response => {
 		if (response.statusCode === 200) {
 			res.sendFile(__dirname + '/success.html')
+			// res.redirect('/')
 		} else {
 			res.sendFile(__dirname + '/failure.html')
+			res.redirect('/')
 		}
 
 		response.on('data', data => {
